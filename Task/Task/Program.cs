@@ -1,6 +1,6 @@
 using DB;
 using Microsoft.EntityFrameworkCore;
-using Task.Services.Category;
+using Task.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,7 +12,13 @@ builder.Services.AddDbContext<Context>(options =>
         .UseSqlServer(builder.Configuration.GetConnectionString("DataBase"));
 });
 
+builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
+
 builder.Services.AddScoped<ICategoryServices, CategryServices>();
+builder.Services.AddScoped<IdeviceServices, DeviceServices>();
+builder.Services.AddScoped<IpropertyServices, PropertyServices>();
+
+
 
 
 

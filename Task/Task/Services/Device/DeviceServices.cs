@@ -1,7 +1,9 @@
 ﻿using DB;
+using Microsoft.AspNetCore.Http.Features;
+using Microsoft.EntityFrameworkCore;
 using Task.Models;
 
-namespace Task.Services.Device
+namespace Task.Services
 {
     public class DeviceServices: IdeviceServices
     {
@@ -11,14 +13,32 @@ namespace Task.Services.Device
             Db = _db;
         }
 
-        public IEnumerable<DeviceViewModel> AddDevice()
-        {
-            throw new NotImplementedException();
+        public void AddDevice(DeviceViewModel deviceModel)
+        {   
+            Device device = new Device()
+            {
+                Name = deviceModel.DeviceName,
+                AcquisitionDate = deviceModel.DeviceAcquisitionDate,
+                Memo = deviceModel.DeviceMemo,
+                CategoryId = deviceModel.CategoryId,  
+            };
+            Db.device.Add(device);
+            Db.SaveChanges();
+
         }
 
-        public void EditDevice(DeviceViewModel device)
+        public IEnumerable<DeviceViewModel> GetDevices()
         {
-            throw new NotImplementedException();
+            var Devices = Db.device.Select(d => new DeviceViewModel()
+            {
+                DeviceName= d.Name,
+                DeviceMemo= d.Memo,
+                DeviceAcquisitionDate= d.AcquisitionDate,
+                CategoryId= d.CategoryId
+            });
+
+            return Devices;
+
         }
     }
 }

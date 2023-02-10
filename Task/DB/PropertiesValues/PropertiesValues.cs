@@ -11,12 +11,18 @@ namespace DB
 {
     public class PropertiesValues
     {
-        [Key]
-        public int Id { get; set; }
+        //[Key]
+        //public int Id { get; set; }
         [Required]
         public string Values { get; set; }
+
         [ForeignKey("Device")]
         public int DeviceId { get; set; }
         public virtual Device Device { get; set; }
+
+        [ForeignKey("property")]
+        public int PropertyId { get; set; }
+        public virtual Property property { get; set; }
+
     }
 }

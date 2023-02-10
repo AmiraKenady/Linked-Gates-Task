@@ -1,6 +1,6 @@
 ﻿using Task.Models;
 
-namespace Task.Services.Category
+namespace Task.Services
 {
     public interface ICategoryServices
     {

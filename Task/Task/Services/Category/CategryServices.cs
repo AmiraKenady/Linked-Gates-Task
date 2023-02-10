@@ -1,7 +1,7 @@
 ﻿using DB;
 using Task.Models;
 
-namespace Task.Services.Category
+namespace Task.Services
 {
     public class CategryServices : ICategoryServices
     {
@@ -13,7 +13,7 @@ namespace Task.Services.Category
 
         public IEnumerable<CategoryViewModel> GetAllCategories()
         {
-            var CategoryList= Db.categories.Select(c=> new CategoryViewModel
+            var CategoryList= Db.category.Select(c=> new CategoryViewModel
             {
                 Id= c.Id,
                 Name = c.Name,

@@ -2,12 +2,9 @@
 {
     public class CategoryPropertiesViewModel
     {
+        public int categoryId { get; set; }
+        public int propertyId { get; set; }
      
-        public int CategoryId { get; set; }
-
-        //public string Name { get; set; }
-
-        public string Values { get; set; }
-        public int PropertiyId { get; set; }
+   
     }
 }

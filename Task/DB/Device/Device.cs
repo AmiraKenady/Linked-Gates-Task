@@ -10,6 +10,10 @@ namespace DB
 {
     public class Device
     {
+        public Device() {
+            Property = new List<Property>();
+            PropertyValues = new List<PropertiesValues>();
+        } 
         [Key]
         public int Id { get; set; }
         [Required]
@@ -22,7 +26,8 @@ namespace DB
         public int CategoryId { get; set; }
         public virtual Category Category { get; set; }
 
-        public virtual ICollection<PropertiesValues> Properties { get; set; }
+        public virtual ICollection<PropertiesValues> PropertyValues { get; set; }
+        public virtual ICollection<Property> Property { get; set; }
 
     }
 }

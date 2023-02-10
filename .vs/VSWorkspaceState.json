@@ -2,8 +2,12 @@
   "ExpandedNodes": [
     "",
     "\\Task",
-    "\\Task\\Task"
+    "\\Task\\Task",
+    "\\Task\\Task\\Services",
+    "\\Task\\Task\\Services\\Property",
+    "\\Task\\Task\\Views",
+    "\\Task\\Task\\Views\\Home"
   ],
-  "SelectedNode": "\\Task\\Task\\appsettings.json",
+  "SelectedNode": "\\Task\\Task\\Services\\Property\\PropertyServices.cs",
   "PreviewInSolutionExplorer": false
 }

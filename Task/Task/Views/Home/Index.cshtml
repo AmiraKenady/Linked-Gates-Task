@@ -1,14 +1,38 @@
-﻿@model IEnumerable<CategoryViewModel>
+﻿@model IEnumerable<DeviceViewModel>
 @{
     ViewData["Title"] = "Home Page";
+    int i = 0;
 }
+<h1>Device List:</h1>
+@*<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Device Name</th>
+            <th scope="col">Device Category</th>
+            <th scope="col">Acquisition Date</th>
+            <th scope="col">Memo</th>
+            <th scope="col">Edit Device</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var item in Model){
+            <tr>
 
-@foreach(var cat in Model){
-<h1> @cat.Name</h1>
-}
+                <td>@(++i)</td>
+                <td>@item.DeviceName</td>
+                <td>@item.CategoryId</td>
+                <td>@item.DeviceAcquisitionDate</td>
+                <td>@item.DeviceMemo</td>
 
+                <td>
+                    <button class="btn btn-warning">Edit</button>
+                </td>
 
-<div class="card mx-auto shadow-lg" >
-    
-</div>
+            </tr>
+        }
 
+    </tbody>
+</table>
+*@
+<a class="btn btn-primary" asp-action="AddDevice" asp-controller="Home"> Add New Device</a>

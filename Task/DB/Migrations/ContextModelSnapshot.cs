@@ -51,7 +51,7 @@ namespace DB.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("categories");
+                    b.ToTable("category");
                 });
 
             modelBuilder.Entity("DB.Device", b =>
@@ -79,16 +79,13 @@ namespace DB.Migrations
 
                     b.HasIndex("CategoryId");
 
-                    b.ToTable("devices");
+                    b.ToTable("device");
                 });
 
             modelBuilder.Entity("DB.PropertiesValues", b =>
                 {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
+                    b.Property<int>("PropertyId")
                         .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<int>("DeviceId")
                         .HasColumnType("int");
@@ -97,7 +94,7 @@ namespace DB.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("Id");
+                    b.HasKey("PropertyId", "DeviceId");
 
                     b.HasIndex("DeviceId");
 
@@ -118,7 +115,7 @@ namespace DB.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("properties");
+                    b.ToTable("property");
                 });
 
             modelBuilder.Entity("CategoryProperty", b =>
@@ -150,12 +147,20 @@ namespace DB.Migrations
             modelBuilder.Entity("DB.PropertiesValues", b =>
                 {
                     b.HasOne("DB.Device", "Device")
-                        .WithMany("Properties")
+                        .WithMany("PropertyValues")
                         .HasForeignKey("DeviceId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("DB.Property", "property")
+                        .WithMany("PropertiesValues")
+                        .HasForeignKey("PropertyId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.Navigation("Device");
+
+                    b.Navigation("property");
                 });
 
             modelBuilder.Entity("DB.Category", b =>
@@ -165,7 +170,12 @@ namespace DB.Migrations
 
             modelBuilder.Entity("DB.Device", b =>
                 {
-                    b.Navigation("Properties");
+                    b.Navigation("PropertyValues");
+                });
+
+            modelBuilder.Entity("DB.Property", b =>
+                {
+                    b.Navigation("PropertiesValues");
                 });
 #pragma warning restore 612, 618
         }

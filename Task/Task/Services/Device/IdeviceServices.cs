@@ -1,11 +1,13 @@
-﻿using Task.Models;
+﻿using DB;
+using Task.Models;
 
-namespace Task.Services.Device
+namespace Task.Services
 {
     public interface IdeviceServices
     {
-        public IEnumerable<DeviceViewModel> AddDevice();
-        public void EditDevice(DeviceViewModel device);
+        public void AddDevice(DeviceViewModel device);
+        public IEnumerable<DeviceViewModel> GetDevices();
+        
 
     }
 }

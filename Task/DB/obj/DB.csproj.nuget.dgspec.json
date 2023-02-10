@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Linked Gates Assignment\\Task\\DB\\DB.csproj": {}
+    "D:\\Linked Gates AssignmentKaty\\Task\\DB\\DB.csproj": {}
   },
   "projects": {
-    "F:\\Linked Gates Assignment\\Task\\DB\\DB.csproj": {
+    "D:\\Linked Gates AssignmentKaty\\Task\\DB\\DB.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Linked Gates Assignment\\Task\\DB\\DB.csproj",
+        "projectUniqueName": "D:\\Linked Gates AssignmentKaty\\Task\\DB\\DB.csproj",
         "projectName": "DB",
-        "projectPath": "F:\\Linked Gates Assignment\\Task\\DB\\DB.csproj",
+        "projectPath": "D:\\Linked Gates AssignmentKaty\\Task\\DB\\DB.csproj",
         "packagesPath": "C:\\Users\\motaheda\\.nuget\\packages\\",
-        "outputPath": "F:\\Linked Gates Assignment\\Task\\DB\\obj\\",
+        "outputPath": "D:\\Linked Gates AssignmentKaty\\Task\\DB\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\motaheda\\AppData\\Roaming\\NuGet\\NuGet.Config",

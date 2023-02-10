@@ -15,5 +15,10 @@ namespace DB
         public string Name { get; set; }
 
         public virtual ICollection<Category> Categories { get; set; }
+        public virtual ICollection<Device> Devices { get; set; }
+        public virtual ICollection<PropertiesValues> PropertiesValues { get; set; }
+
+        
+
     }
 }
