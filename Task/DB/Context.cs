@@ -38,7 +38,7 @@ namespace DB
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             base.OnConfiguring(optionsBuilder);
-            //optionsBuilder.UseSqlServer("Data Source=DESKTOP-HH9RCV9\\SQLEXPRESS;Initial Catalog=taskTest;Integrated Security=True");
+            
         }
     }
 }

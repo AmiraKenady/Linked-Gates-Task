@@ -10,7 +10,8 @@ namespace DB
 {
     public class Device
     {
-        public Device() {
+        public Device() 
+        {
             Property = new List<Property>();
             PropertyValues = new List<PropertiesValues>();
         } 

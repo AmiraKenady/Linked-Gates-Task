@@ -25,7 +25,7 @@ namespace Task.Services
                 {
                     var prop = new Classtest() { id = cat, pid = item.Id, value = item.Name };
                     catprop.Add(prop);
-                    //Console.WriteLine("cat ="+cat+ " " + "PropID="+ item.Id+" " +"propname=" + item.Name);
+                  
                 }
             }
             return catprop;
@@ -41,5 +41,13 @@ namespace Task.Services
             };
             Db.PropertiesValues.Add(propertyValues);
         }
+
+        //public void Addtest(PropertiesValuesViewModel PropModel)
+        //{
+        //    PropertiesValues propertyValues = new PropertiesValues();
+        //    Db.PropertiesValues.Include("Device")
+
+
+        //}
     }
 }

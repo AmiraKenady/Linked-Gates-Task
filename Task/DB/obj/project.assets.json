@@ -7082,11 +7082,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Linked Gates AssignmentKaty\\Task\\DB\\DB.csproj",
+      "projectUniqueName": "D:\\Linked Gates Assignment\\Task\\DB\\DB.csproj",
       "projectName": "DB",
-      "projectPath": "D:\\Linked Gates AssignmentKaty\\Task\\DB\\DB.csproj",
+      "projectPath": "D:\\Linked Gates Assignment\\Task\\DB\\DB.csproj",
       "packagesPath": "C:\\Users\\motaheda\\.nuget\\packages\\",
-      "outputPath": "D:\\Linked Gates AssignmentKaty\\Task\\DB\\obj\\",
+      "outputPath": "D:\\Linked Gates Assignment\\Task\\DB\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\motaheda\\AppData\\Roaming\\NuGet\\NuGet.Config",

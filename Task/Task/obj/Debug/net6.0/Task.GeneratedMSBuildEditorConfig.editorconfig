@@ -8,37 +8,37 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Task
 build_property.RootNamespace = Task
-build_property.ProjectDir = D:\Linked Gates AssignmentKaty\Task\Task\
+build_property.ProjectDir = D:\Linked Gates Assignment\Task\Task\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = true
-build_property.MSBuildProjectDirectory = D:\Linked Gates AssignmentKaty\Task\Task
+build_property.MSBuildProjectDirectory = D:\Linked Gates Assignment\Task\Task
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/Linked Gates AssignmentKaty/Task/Task/Views/Home/AddDevice.cshtml]
+[D:/Linked Gates Assignment/Task/Task/Views/Home/AddDevice.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZGREZXZpY2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Linked Gates AssignmentKaty/Task/Task/Views/Home/Index.cshtml]
+[D:/Linked Gates Assignment/Task/Task/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Linked Gates AssignmentKaty/Task/Task/Views/Home/Privacy.cshtml]
+[D:/Linked Gates Assignment/Task/Task/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Linked Gates AssignmentKaty/Task/Task/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/Linked Gates Assignment/Task/Task/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Linked Gates AssignmentKaty/Task/Task/Views/_ViewImports.cshtml]
+[D:/Linked Gates Assignment/Task/Task/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Linked Gates AssignmentKaty/Task/Task/Views/_ViewStart.cshtml]
+[D:/Linked Gates Assignment/Task/Task/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Linked Gates AssignmentKaty/Task/Task/Views/Shared/_Layout.cshtml]
+[D:/Linked Gates Assignment/Task/Task/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-igz9kj0vja

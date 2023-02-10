@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace DB.Migrations
 {
-    public partial class start2 : Migration
+    public partial class initiall : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

@@ -7,5 +7,6 @@ namespace Task.Services
     {
         public List<Classtest> getProperties(int id);
         public void AddPropertiesValues(PropertiesValuesViewModel PropModel);
+        //public void Addtest(PropertiesValuesViewModel PropModel);
     }
 }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Linked Gates AssignmentKaty\\Task\\Task\\Task.csproj": {}
+    "D:\\Linked Gates Assignment\\Task\\Task\\Task.csproj": {}
   },
   "projects": {
-    "D:\\Linked Gates AssignmentKaty\\Task\\DB\\DB.csproj": {
+    "D:\\Linked Gates Assignment\\Task\\DB\\DB.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Linked Gates AssignmentKaty\\Task\\DB\\DB.csproj",
+        "projectUniqueName": "D:\\Linked Gates Assignment\\Task\\DB\\DB.csproj",
         "projectName": "DB",
-        "projectPath": "D:\\Linked Gates AssignmentKaty\\Task\\DB\\DB.csproj",
+        "projectPath": "D:\\Linked Gates Assignment\\Task\\DB\\DB.csproj",
         "packagesPath": "C:\\Users\\motaheda\\.nuget\\packages\\",
-        "outputPath": "D:\\Linked Gates AssignmentKaty\\Task\\DB\\obj\\",
+        "outputPath": "D:\\Linked Gates Assignment\\Task\\DB\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\motaheda\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -89,14 +89,14 @@
         }
       }
     },
-    "D:\\Linked Gates AssignmentKaty\\Task\\Task\\Task.csproj": {
+    "D:\\Linked Gates Assignment\\Task\\Task\\Task.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Linked Gates AssignmentKaty\\Task\\Task\\Task.csproj",
+        "projectUniqueName": "D:\\Linked Gates Assignment\\Task\\Task\\Task.csproj",
         "projectName": "Task",
-        "projectPath": "D:\\Linked Gates AssignmentKaty\\Task\\Task\\Task.csproj",
+        "projectPath": "D:\\Linked Gates Assignment\\Task\\Task\\Task.csproj",
         "packagesPath": "C:\\Users\\motaheda\\.nuget\\packages\\",
-        "outputPath": "D:\\Linked Gates AssignmentKaty\\Task\\Task\\obj\\",
+        "outputPath": "D:\\Linked Gates Assignment\\Task\\Task\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\motaheda\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -113,8 +113,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Linked Gates AssignmentKaty\\Task\\DB\\DB.csproj": {
-                "projectPath": "D:\\Linked Gates AssignmentKaty\\Task\\DB\\DB.csproj"
+              "D:\\Linked Gates Assignment\\Task\\DB\\DB.csproj": {
+                "projectPath": "D:\\Linked Gates Assignment\\Task\\DB\\DB.csproj"
               }
             }
           }
