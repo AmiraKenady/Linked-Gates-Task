@@ -15,7 +15,9 @@ namespace Task.Models
         [Display(Name = "Memo")]
         [Required(ErrorMessage = "Device Memo is Required")]
         public string DeviceMemo { get; set; }
-        [Required]
+        
+        [Display(Name = "Category Name")]
+        [Required(ErrorMessage = "Please Select Category")]
         public int CategoryId { get; set; }
     }
 }

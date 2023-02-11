@@ -25,11 +25,9 @@
         <div class="m-5">
             <label asp-for="CategoryId"></label>
             <select class="form-select" asp-for="CategoryId" id="cat" asp-items="@(new SelectList(ViewBag.Category,"Id","Name"))">
-
-
-                <option></option>
-                    
-            </select>   
+                <option></option>      
+            </select> 
+            <span class="text-danger" asp-validation-for="CategoryId"></span>
         </div>
         <div id="propertiesContainer" class="m-5">
 

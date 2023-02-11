@@ -12,8 +12,5 @@ namespace Task.Models
         [Display(Name= "Category Name")]
         public string Name { get; set; }
 
-        //public virtual ICollection<Property> Properties { get; set; }
-
-        //public virtual ICollection<Device> Devices { get; set; }
     }
 }
