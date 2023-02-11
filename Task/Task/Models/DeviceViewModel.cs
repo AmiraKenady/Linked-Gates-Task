@@ -6,6 +6,7 @@ namespace Task.Models
 {
     public class DeviceViewModel
     {
+        public int Id { get; set; }
         [Display(Name = "Device Name")]
         [Required(ErrorMessage ="Device Name is Required")]
         public string DeviceName { get; set; }
@@ -19,5 +20,6 @@ namespace Task.Models
         [Display(Name = "Category Name")]
         [Required(ErrorMessage = "Please Select Category")]
         public int CategoryId { get; set; }
+        public List<PropertiesValuesViewModel> Properties { get; set; }
     }
 }

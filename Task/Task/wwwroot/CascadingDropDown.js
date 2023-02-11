@@ -12,12 +12,14 @@
                 $.each(data, function (index, property) {
                     var propertyDiv = $("<div></div>");
                     propertyDiv.append("<label class='m-3'>" + property.value + ": </label>");
-                    var input = $("<input class='form-control m-3' type='text' name='" + property.value + "' />");
-                    input.val(property.Value);
-                    propertyDiv.append(input);
+                    var input1 = $("<input class='form-control' type='text' name='Properties[" + index + "].value' />");
+                    var input2 = $(" <input type='text' hidden name='Properties[" + index + "].propertyId' value = '" + property.pid + "' />")
+                    propertyDiv.append(input1);
+                    propertyDiv.append(input2);
                     $("#propertiesContainer").append(propertyDiv);
                 });
             }
+            
         });
     });
 });

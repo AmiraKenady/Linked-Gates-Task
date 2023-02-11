@@ -1,0 +1,44 @@
+﻿@model DeviceViewModel
+@{
+    ViewData["Title"] = "Edit Device";
+}
+
+    <div class="card-body">
+     @*   <h5 class="card-title">@Model.DeviceName</h5>
+
+        <form asp-action="EditDevice" asp-controller="Home" method="post">
+            <div class="m-5">
+                <label asp-for="DeviceName"></label>
+                <input type="text" class="form-control" asp-for="DeviceName" value="@Model.DeviceName">
+                <span class="text-danger" asp-validation-for="DeviceName"></span>
+            </div>
+            <div class="m-5">
+                <label asp-for="DeviceAcquisitionDate"></label>
+                <input type="date" class="form-control" asp-for="DeviceAcquisitionDate" value="@Model.DeviceAcquisitionDate">
+                <span class="text-danger" asp-validation-for="DeviceAcquisitionDate"></span>
+            </div>
+            <div class="m-5">
+                <label asp-for="DeviceMemo"></label>
+                <input type="text" class="form-control" asp-for="DeviceMemo" value="@Model.DeviceMemo">
+                <span class="text-danger" asp-validation-for="DeviceMemo"></span>
+            </div>
+            <div class="m-5">
+                <label asp-for="CategoryId"></label>
+                <select class="form-select" asp-for="CategoryId" id="cat" asp-items="@(new SelectList(ViewBag.Category,"Id","Name"))">
+                    <option></option>
+                </select>
+                <span class="text-danger" asp-validation-for="CategoryId"></span>
+            </div>
+            <div id="propertiesContainer" class="m-5">
+            </div>
+            <input type="submit" class="btn btn-primary m-5" value="Save" />
+
+        </form>*@
+
+       
+       
+    </div>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>
+<script src="~/CascadingDropDown.js"></script>

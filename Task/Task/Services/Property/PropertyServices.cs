@@ -35,7 +35,7 @@ namespace Task.Services
         {
             PropertiesValues propertyValues = new PropertiesValues()
             {
-                Values = PropModel.values,
+                Values = PropModel.value,
                 DeviceId = PropModel.DeviceId,
                 PropertyId = PropModel.propertyId
             };

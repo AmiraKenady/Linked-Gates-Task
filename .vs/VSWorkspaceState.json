@@ -3,6 +3,7 @@
     "",
     "\\Task",
     "\\Task\\Task",
+    "\\Task\\Task\\Models",
     "\\Task\\Task\\Services",
     "\\Task\\Task\\Services\\Property",
     "\\Task\\Task\\Views",

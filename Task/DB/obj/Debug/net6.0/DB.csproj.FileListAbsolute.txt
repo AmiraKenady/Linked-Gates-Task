@@ -68,3 +68,17 @@ D:\Linked Gates Assignment\Task\DB\obj\Debug\net6.0\refint\DB.dll
 D:\Linked Gates Assignment\Task\DB\obj\Debug\net6.0\DB.pdb
 D:\Linked Gates Assignment\Task\DB\obj\Debug\net6.0\DB.genruntimeconfig.cache
 D:\Linked Gates Assignment\Task\DB\obj\Debug\net6.0\ref\DB.dll
+F:\Linked Gates Assignment update\Task\DB\bin\Debug\net6.0\DB.deps.json
+F:\Linked Gates Assignment update\Task\DB\bin\Debug\net6.0\DB.runtimeconfig.json
+F:\Linked Gates Assignment update\Task\DB\bin\Debug\net6.0\DB.dll
+F:\Linked Gates Assignment update\Task\DB\bin\Debug\net6.0\DB.pdb
+F:\Linked Gates Assignment update\Task\DB\obj\Debug\net6.0\DB.csproj.AssemblyReference.cache
+F:\Linked Gates Assignment update\Task\DB\obj\Debug\net6.0\DB.GeneratedMSBuildEditorConfig.editorconfig
+F:\Linked Gates Assignment update\Task\DB\obj\Debug\net6.0\DB.AssemblyInfoInputs.cache
+F:\Linked Gates Assignment update\Task\DB\obj\Debug\net6.0\DB.AssemblyInfo.cs
+F:\Linked Gates Assignment update\Task\DB\obj\Debug\net6.0\DB.csproj.CoreCompileInputs.cache
+F:\Linked Gates Assignment update\Task\DB\obj\Debug\net6.0\DB.dll
+F:\Linked Gates Assignment update\Task\DB\obj\Debug\net6.0\refint\DB.dll
+F:\Linked Gates Assignment update\Task\DB\obj\Debug\net6.0\DB.pdb
+F:\Linked Gates Assignment update\Task\DB\obj\Debug\net6.0\DB.genruntimeconfig.cache
+F:\Linked Gates Assignment update\Task\DB\obj\Debug\net6.0\ref\DB.dll

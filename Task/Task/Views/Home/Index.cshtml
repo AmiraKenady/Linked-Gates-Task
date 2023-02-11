@@ -1,10 +1,10 @@
-﻿@model IEnumerable<DeviceViewModel>
+﻿
 @{
     ViewData["Title"] = "Home Page";
     int i = 0;
 }
 <h1>Device List:</h1>
-@*<table class="table">
+<table class="table">
     <thead>
         <tr>
             <th scope="col">#</th>
@@ -13,26 +13,36 @@
             <th scope="col">Acquisition Date</th>
             <th scope="col">Memo</th>
             <th scope="col">Edit Device</th>
+            @*@foreach (var item in ViewBag.devices){
+                @foreach (var p in item.Property)
+                {
+                    <th scope="col">@p.Name</th>
+                }        
+            }*@
         </tr>
+    
     </thead>
     <tbody>
-        @foreach(var item in Model){
+        @foreach (var item in ViewBag.devices)
+        {
             <tr>
 
                 <td>@(++i)</td>
-                <td>@item.DeviceName</td>
+                <td>@item.Name</td>
                 <td>@item.CategoryId</td>
-                <td>@item.DeviceAcquisitionDate</td>
-                <td>@item.DeviceMemo</td>
-
+                <td>@item.AcquisitionDate\</td>
+                <td>@item.Memo</td>
                 <td>
-                    <button class="btn btn-warning">Edit</button>
+                    <a class="btn btn-warning" asp-action="EditDevice" asp-controller="Home" asp-route-id="@item.Id">Edit</a>
                 </td>
 
+                @*@foreach (var p in item.PropertyValues){
+                    <td>@p.Values</td>
+                }*@
             </tr>
         }
 
     </tbody>
 </table>
-*@
+
 <a class="btn btn-primary" asp-action="AddDevice" asp-controller="Home"> Add New Device</a>

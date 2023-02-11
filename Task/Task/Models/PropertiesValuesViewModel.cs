@@ -9,7 +9,7 @@ namespace Task.Models
         public int propertyId { get; set; }
         [Required]
         public int DeviceId { get; set; }
-        public string values  { get; set; }
+        public string value  { get; set; }
        
 
 

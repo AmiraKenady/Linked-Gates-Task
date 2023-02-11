@@ -21,7 +21,7 @@ namespace Task.Controllers
 
         public IActionResult Index()
         {
-            //var devices = DeviceServices.GetDevices();
+            ViewBag.devices = DeviceServices.GetDevices();
             return View();
         }
 
@@ -40,7 +40,7 @@ namespace Task.Controllers
             if (ModelState.IsValid)
             {
                 
-                DeviceServices.AddDevice(deviceModel);
+                DeviceServices.AddDeviceAndProprty(deviceModel);
                 return RedirectToAction("Index");
             }
             else
@@ -64,8 +64,28 @@ namespace Task.Controllers
             var x = propertyServices.getProperties(catid);
             return Json(x);
         }
-        
-        
+
+        public IActionResult EditDevice(DeviceViewModel deviceModel)
+        {
+            if (ModelState.IsValid)
+            {
+                DeviceServices.EditDevice(deviceModel);
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                var errors =
+                ModelState.SelectMany(i => i.Value.Errors.Select(x => x.ErrorMessage));
+
+                foreach (string err in errors)
+                    ModelState.AddModelError("", err);
+                ViewBag.Category = CategoryService.GetAllCategories();
+                return View();
+            }
+          
+        }
+
+
         public IActionResult Privacy()
         {
             return View();

@@ -5,9 +5,13 @@ namespace Task.Services
 {
     public interface IdeviceServices
     {
-        public void AddDevice(DeviceViewModel device);
-        public IEnumerable<DeviceViewModel> GetDevices();
-        
+        public Device AddDevice(DeviceViewModel device);
+        //public IEnumerable<DeviceViewModel> GetDevices();
+        public List<Device> GetDevices();
+        public void AddDeviceAndProprty(DeviceViewModel deviceModel);
+        public void EditDevice (DeviceViewModel deviceModel);
+
+
 
     }
 }
