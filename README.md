@@ -1,5 +1,5 @@
 # Linked-Gates-Task
-Please Fill these tables manually in database:
+Before running the application, Please Fill these tables manually in database:
 
 1. property
 2. category
