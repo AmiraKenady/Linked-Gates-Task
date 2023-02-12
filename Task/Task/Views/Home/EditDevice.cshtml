@@ -4,7 +4,7 @@
 }
 
     <div class="card-body">
-     @*   <h5 class="card-title">@Model.DeviceName</h5>
+        @*<h5 class="card-title">@Model.DeviceName</h5>*@
 
         <form asp-action="EditDevice" asp-controller="Home" method="post">
             <div class="m-5">
@@ -22,6 +22,16 @@
                 <input type="text" class="form-control" asp-for="DeviceMemo" value="@Model.DeviceMemo">
                 <span class="text-danger" asp-validation-for="DeviceMemo"></span>
             </div>
+          @*  <div class="m-5">
+                <label asp-for="CategoryId"></label>
+                <select class="form-select" asp-for="CategoryId" id="cat">
+                @foreach (var item in ViewBag.Category){
+                    <option value="@item.Id">@item.Name</option>
+                }
+                    
+                </select>
+                <span class="text-danger" asp-validation-for="CategoryId"></span>
+            </div>*@
             <div class="m-5">
                 <label asp-for="CategoryId"></label>
                 <select class="form-select" asp-for="CategoryId" id="cat" asp-items="@(new SelectList(ViewBag.Category,"Id","Name"))">
@@ -29,11 +39,15 @@
                 </select>
                 <span class="text-danger" asp-validation-for="CategoryId"></span>
             </div>
+       @* <div class="m-5">
+            <label asp-for="CategoryId"></label>
+            <input type="text" class="form-control" asp-for="CategoryId" value="@Model.CategoryName" readonly>
+        </div>*@
             <div id="propertiesContainer" class="m-5">
             </div>
             <input type="submit" class="btn btn-primary m-5" value="Save" />
 
-        </form>*@
+        </form>
 
        
        

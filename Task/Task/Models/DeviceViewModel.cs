@@ -20,6 +20,7 @@ namespace Task.Models
         [Display(Name = "Category Name")]
         [Required(ErrorMessage = "Please Select Category")]
         public int CategoryId { get; set; }
+        public string CategoryName { get; set; }
         public List<PropertiesValuesViewModel> Properties { get; set; }
     }
 }

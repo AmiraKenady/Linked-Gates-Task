@@ -65,11 +65,22 @@ namespace Task.Controllers
             return Json(x);
         }
 
+        [HttpGet]
+        public IActionResult EditDevice(int id)
+        {
+            ViewBag.Category = CategoryService.GetAllCategories();
+            var device = DeviceServices.GetDeviceById(id);
+            return View(device);
+
+        }
+
+
+        [HttpPost]
         public IActionResult EditDevice(DeviceViewModel deviceModel)
         {
             if (ModelState.IsValid)
             {
-                DeviceServices.EditDevice(deviceModel);
+                DeviceServices.EditDeviceAndProprty(deviceModel);
                 return RedirectToAction("Index");
             }
             else

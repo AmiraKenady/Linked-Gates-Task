@@ -45,6 +45,8 @@ namespace Task.Services
             Db.PropertiesValues.AddRange(properties);
             Db.SaveChanges();
         }
+
+      
         public void AddDeviceAndProprty(DeviceViewModel deviceModel)
         {
             var DeviceAdded = AddDevice(deviceModel);
@@ -59,15 +61,75 @@ namespace Task.Services
             return Devices;
 
         }
+        //public DeviceViewModel GetDeviceById(int id)
+        //{
+        //    var device = Db.device.Where(d => d.Id == id).Select(d => new DeviceViewModel()
+        //    {
+        //        DeviceName = d.Name,
+        //        DeviceAcquisitionDate = d.AcquisitionDate,
+        //        DeviceMemo = d.Memo,
+        //        CategoryId = d.CategoryId,
 
-        public void EditDevice(DeviceViewModel deviceModel)
+        //    }).FirstOrDefault();
+        //    Db.SaveChanges();
+        //    return device;
+
+        //}
+        public Device GetDeviceById(int id)
         {
-            var editedDevice = Db.device.Where(d => d.Id == deviceModel.Id).FirstOrDefault();
-            editedDevice.Name = deviceModel.DeviceName;
-            editedDevice.AcquisitionDate = deviceModel.DeviceAcquisitionDate;
-            editedDevice.Memo = deviceModel.DeviceMemo;
+            var device = Db.device.Where(d => d.Id == id).FirstOrDefault();
+            
+            return device;
 
+        }
+        public List<PropertiesValues> GetPropertyByDeviceId(int Deviceid)
+        {
+
+            var properties = Db.PropertiesValues.Where(d => d.DeviceId == Deviceid).ToList();
+
+            return properties;
+        }
+
+        public DeviceViewModel EditDevice(DeviceViewModel deviceModel)
+        {
+            var editedDevice = GetDeviceById(deviceModel.Id);
+
+            editedDevice.Name = deviceModel.DeviceName;
+            editedDevice.Memo = deviceModel.DeviceMemo;
+            editedDevice.AcquisitionDate = deviceModel.DeviceAcquisitionDate;
+            editedDevice.CategoryId= deviceModel.CategoryId;
+            
+            Db.device.Update(editedDevice);
             Db.SaveChanges();
+            return deviceModel;
+        }
+          
+        public List<PropertiesValues> EditDeviceProp(List<PropertiesValuesViewModel> propertiesValuesViewModels, int DeviceId)
+        {
+            var properties = GetPropertyByDeviceId(DeviceId);
+            foreach(var item in propertiesValuesViewModels)
+            {
+                foreach(var a in properties)
+                {
+                    a.PropertyId = item.propertyId;
+                    //a.DeviceId = DeviceId;
+                    a.Values = item.value;
+                }
+               
+            };
+            Db.PropertiesValues.UpdateRange(properties);
+            Db.SaveChanges();
+            return properties;
+
+
+        }
+        public DeviceViewModel EditDeviceAndProprty(DeviceViewModel deviceModel)
+        {
+
+            var EditedDevice = EditDevice(deviceModel);
+            var devicid = EditedDevice.Id;
+            EditDeviceProp(deviceModel.Properties, devicid);
+            return EditedDevice;
         }
     }
 }

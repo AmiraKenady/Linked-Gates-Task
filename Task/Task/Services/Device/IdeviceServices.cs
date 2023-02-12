@@ -9,7 +9,13 @@ namespace Task.Services
         //public IEnumerable<DeviceViewModel> GetDevices();
         public List<Device> GetDevices();
         public void AddDeviceAndProprty(DeviceViewModel deviceModel);
-        public void EditDevice (DeviceViewModel deviceModel);
+        List<PropertiesValues> GetPropertyByDeviceId(int Deviceid);
+
+        //public DeviceViewModel GetDeviceById(int id);
+        public Device GetDeviceById(int id);
+        public DeviceViewModel EditDevice(DeviceViewModel deviceModel);
+        List<PropertiesValues> EditDeviceProp(List<PropertiesValuesViewModel> propertiesValuesViewModels, int DeviceId);
+        DeviceViewModel EditDeviceAndProprty(DeviceViewModel deviceModel);
 
 
 
